@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Promociones - Color y papel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .promo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 0 30px 40px;
+    }
+
+    .promo-card {
+      background-color: #009DDD;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .promo-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .promo-card img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: contain;
+      border-radius: 8px;
+      background-color: white;
+      margin-bottom: 10px;
+      border: 2px solid #fff;
+    }
+
+    .promo-title {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .promo-desc {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .promo-price {
+      font-weight: bold;
+      font-size: 16px;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-contenedor">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <nav class="nav-horizontal">
+      <ul>
+      <li><a href="login.html">LOGIN</a></li>
+       <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="equipo.html">EQUIPO</a></li>
+      <li><a href="clientes.html">CLIENTES</a></li>
+      <li><a href="productos.html">PRODUCTOS</a></li>
+      <li><a href="promociones.html">PROMOCIONES</a></li>
+      <li><a href="sucursales.html">SUCURSALES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo">PROMOCIONES ESCOLARES</h2>
+
+    <div class="promo-grid">
+      <div class="promo-card">
+        <img src="imagenes/promociones/mochila.jpg" alt="Mochila escolar">
+        <div class="promo-title">Mochila Resistente</div>
+        <div class="promo-desc">Con múltiples compartimentos y diseño ergonómico.</div>
+        <div class="promo-price">S/ 59.90</div>
+      </div>
+
+      <div class="promo-card">
+        <img src="imagenes/promociones/utiles.jpg" alt="Kit de útiles escolares">
+        <div class="promo-title">Kit Escolar Completo</div>
+        <div class="promo-desc">Incluye cuadernos, lápices, regla, colores y más.</div>
+        <div class="promo-price">S/ 29.90</div>
+      </div>
+
+      <div class="promo-card">
+        <img src="imagenes/promociones/lonchera.jpg" alt="Lonchera térmica">
+        <div class="promo-title">Lonchera Térmica</div>
+        <div class="promo-desc">Mantiene los alimentos frescos por más tiempo.</div>
+        <div class="promo-price">S/ 24.90</div>
+      </div>
+
+      <div class="promo-card">
+        <img src="imagenes/promociones/uniforme.jpg" alt="Uniforme escolar">
+        <div class="promo-title">Uniforme Escolar</div>
+        <div class="promo-desc">Conjunto completo: camisa, pantalón/falda y corbata.</div>
+        <div class="promo-price">S/ 89.90</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+   Color y papel © 2025
+  </footer>
+</body>
+</html>

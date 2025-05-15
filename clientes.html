@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clientes - Color y papel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .subtitulo {
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #3A3132;
+      font-size: 26px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .clientes-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      padding: 0 30px 40px;
+    }
+    .cliente-card {
+      background-color: #386DBD;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .cliente-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      object-position: center;
+      border: 3px solid #05D3F8;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      background-color: white;
+      display: block;
+    }
+
+    .cliente-card p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-contenedor">
+    <img src="logo.png" alt="Logo de la empresa" class="logo">
+  </div>
+  <nav class="nav-horizontal">
+      <ul>
+        <li><a href="login.html">LOGIN</a></li>
+       <li><a href="index.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="equipo.html">EQUIPO</a></li>
+        <li><a href="clientes.html">CLIENTES</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="promociones.html">PROMOCIONES</a></li>
+        <li><a href="sucursales.html">SUCURSALES</a></li>
+      </ul>
+    </nav>
+  <div class="subtitulo">"CLIENTES"</div>
+  <div class="clientes-grid">
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente1.jpg" alt="Cliente 1">
+      <p><strong>María Torres</strong></p>
+      <p>maria.torres@email.com</p>
+      <p>C.I: 0923456789</p>
+      <p>0991234567</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente2.jpg" alt="Cliente 2">
+      <p><strong>Carlos Ruiz</strong></p>
+      <p>carlos.ruiz@email.com</p>
+      <p>C.I: 0912345678</p>
+      <p>0987654321</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente3.jpg" alt="Cliente 3">
+      <p><strong>Lucía Mendoza</strong></p>
+      <p>lucia.mendoza@email.com</p>
+      <p>C.I: 0934567890</p>
+      <p>0976543210</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente4.jpg" alt="Cliente 4">
+      <p><strong>Pedro Salazar</strong></p>
+      <p>pedro.salazar@email.com</p>
+      <p>C.I: 0956781234</p>
+      <p>0965432109</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente5.jpg" alt="Cliente 5">
+      <p><strong>Ana Ríos</strong></p>
+      <p>ana.rios@email.com</p>
+      <p>C.I: 0978123456</p>
+      <p>0954321098</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente6.jpg" alt="Cliente 6">
+      <p><strong>Jorge Cedeño</strong></p>
+      <p>jorge.cedeno@email.com</p>
+      <p>C.I: 0990011223</p>
+      <p>0943210987</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente7.jpg" alt="Cliente 7">
+      <p><strong>Elena Vargas</strong></p>
+      <p>elena.vargas@email.com</p>
+      <p>C.I: 0901122334</p>
+      <p>0932109876</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente8.jpg" alt="Cliente 8">
+      <p><strong>Daniel Rojas</strong></p>
+      <p>daniel.rojas@email.com</p>
+      <p>C.I: 0912233445</p>
+      <p>0921098765</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente9.jpg" alt="Cliente 9">
+      <p><strong>Sofía Lima</strong></p>
+      <p>sofia.lima@email.com</p>
+      <p>C.I: 0923344556</p>
+      <p>0910987654</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente10.jpg" alt="Cliente 10">
+      <p><strong>Marco Paredes</strong></p>
+      <p>marco.paredes@email.com</p>
+      <p>C.I: 0934455667</p>
+      <p>0909876543</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente11.jpg" alt="Cliente 11">
+      <p><strong>Andrea León</strong></p>
+      <p>andrea.leon@email.com</p>
+      <p>C.I: 0945566778</p>
+      <p>0998765432</p>
+    </div>
+    <div class="cliente-card">
+      <img src="imagenes/clientes/cliente12.jpg" alt="Cliente 12">
+      <p><strong>Kevin Jiménez</strong></p>
+      <p>kevin.jimenez@email.com</p>
+      <p>C.I: 0956677889</p>
+      <p>0987654321</p>
+    </div>
+  </div>
+  <div class="footer">
+    &copy; 2025 Color y papel. Todos los derechos reservados.
+  </div>
+
+</body>
+</html

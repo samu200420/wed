@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Producto - Color y papel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .promo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px 30px 40px;
+    }
+
+    .promo-card {
+      background-color: #009DDD;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .promo-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .promo-card img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background-color: white;
+      border: 2px solid white;
+    }
+
+    .promo-title {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .promo-desc {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .promo-price {
+      font-weight: bold;
+      font-size: 16px;
+      color: #FFD700;
+    }
+
+    .etiqueta-oferta {
+      background-color: #FF4136;
+      color: white;
+      font-size: 12px;
+      padding: 3px 6px;
+      border-radius: 3px;
+      margin-left: 5px;
+    }
+
+    .btn-comprar {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-comprar:hover {
+      background-color: #FFC107;
+    }
+
+    .nota {
+      text-align: center;
+      font-weight: bold;
+      color: #3A3132;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-contenedor">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <nav class="nav-horizontal">
+      <ul>
+      <li><a href="login.html">LOGIN</a></li>
+       <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li><a href="equipo.html">EQUIPO</a></li>
+      <li><a href="clientes.html">CLIENTES</a></li>
+      <li><a href="productos.html">PRODUCTOS</a></li>
+      <li><a href="promociones.html">PROMOCIONES</a></li>
+      <li><a href="sucursales.html">SUCURSALES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo">PRODUCTOS ESCOLARES</h2>
+    <div class="nota">
+      ¡Los mejores productos!
+    </div>
+
+    <div class="promo-grid">
+  <div class="promo-card">
+    <img src="imagenes/productos/mochila.jpg" alt="Mochila escolar">
+    <div class="promo-title">Mochila Escolar</div>
+    <div class="promo-desc">Ergonómica, con múltiples bolsillos.</div>
+    <div class="promo-price">
+      <span style="text-decoration: line-through; color: #ffcccc;">S/ 70.00</span>
+      &nbsp; S/ 59.90
+      <span class="etiqueta-oferta">-15%</span>
+    </div>
+    <button class="btn-comprar">Comprar</button>
+  </div>
+
+  <div class="promo-card">
+    <img src="imagenes/productos/utiles.jpg" alt="Kit escolar">
+    <div class="promo-title">Kit de Útiles</div>
+    <div class="promo-desc">Cuadernos, lápices, reglas y colores.</div>
+    <div class="promo-price">
+      <span style="text-decoration: line-through; color: #ffcccc;">S/ 33.00</span>
+      &nbsp; S/ 29.90
+      <span class="etiqueta-oferta">-10%</span>
+    </div>
+    <button class="btn-comprar">Comprar</button>
+  </div>
+
+  <div class="promo-card">
+    <img src="imagenes/productos/lonchera.jpg" alt="Lonchera térmica">
+    <div class="promo-title">Lonchera Térmica</div>
+    <div class="promo-desc">Mantiene alimentos frescos todo el día.</div>
+    <div class="promo-price">
+      <span style="text-decoration: line-through; color: #ffcccc;">S/ 29.00</span>
+      &nbsp; S/ 24.90
+      <span class="etiqueta-oferta">-14%</span>
+    </div>
+    <button class="btn-comprar">Comprar</button>
+  </div>
+
+  <div class="promo-card">
+    <img src="imagenes/productos/cartuchera.jpg" alt="Cartuchera escolar">
+    <div class="promo-title">Cartuchera</div>
+    <div class="promo-desc">Ideal para organizar tus útiles escolares.</div>
+    <div class="promo-price">S/ 14.50</div>
+    <button class="btn-comprar">Comprar</button>
+  </div>
+
+  <div class="promo-card">
+    <img src="imagenes/productos/uniforme.jpg" alt="Uniforme escolar">
+    <div class="promo-title">Uniforme Escolar</div>
+    <div class="promo-desc">Incluye camisa, pantalón/falda y corbata.</div>
+    <div class="promo-price">
+      <span style="text-decoration: line-through; color: #ffcccc;">S/ 105.00</span>
+      &nbsp; S/ 89.90
+      <span class="etiqueta-oferta">-14%</span>
+    </div>
+    <button class="btn-comprar">Comprar</button>
+  </div>
+
+  <div class="promo-card">
+    <img src="imagenes/productos/cuadernos.jpg" alt="Pack de Cuadernos">
+    <div class="promo-title">Pack de Cuadernos</div>
+    <div class="promo-desc">5 cuadernos rayados de tapa dura.</div>
+    <div class="promo-price">S/ 18.00</div>
+    <button class="btn-comprar">Comprar</button>
+  </div>
+
+  <div class="promo-card">
+    <img src="imagenes/productos/lapices.jpg" alt="Lápices HB">
+    <div class="promo-title">Pack de Lápices HB</div>
+    <div class="promo-desc">10 lápices con borrador incluido.</div>
+    <div class="promo-price">S/ 5.90</div>
+    <button class="btn-comprar">Comprar</button>
+  </div>
+
+  <div class="promo-card">
+    <img src="imagenes/productos/marcadores.jpg" alt="Marcadores escolares">
+    <div class="promo-title">Marcadores Lavables</div>
+    <div class="promo-desc">Colores intensos y seguros para niños.</div>
+    <div class="promo-price">S/ 12.90</div>
+    <button class="btn-comprar">Comprar</button>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+    Color y papel © 2025
+  </footer>
+</body>
+</html>
+

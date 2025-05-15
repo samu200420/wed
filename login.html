@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Color y papel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #386DBD;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .login-container input[type="submit"] {
+      background-color: #05D3F8;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color: #00bcd4;
+    }
+
+    .error {
+      color: yellow;
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-contenedor">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <nav class="nav-horizontal">
+      <ul>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="equipo.html">EQUIPO</a></li>
+        <li><a href="clientes.html">CLIENTES</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="promociones.html">PROMOCIONES</a></li>
+        <li><a href="sucursales.html">SUCURSALES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="login-container">
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm">
+        <input type="text" id="usuario" placeholder="Usuario" required>
+        <input type="password" id="contrasena" placeholder="Contraseña" required>
+        <input type="submit" value="Ingresar">
+        <div id="error" class="error"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+   Color y papel © 2025
+  </footer>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const user = document.getElementById("usuario").value;
+      const pass = document.getElementById("contrasena").value;
+      const error = document.getElementById("error");
+
+      // VALIDACIÓN BÁSICA
+      if (user === "admin" && pass === "1234") {
+        window.location.href = "equipo.html"; // redirige al inicio
+      } else {
+        error.textContent = "Usuario o contraseña incorrectos.";
+      }
+    });
+  </script>
+
+</body>
+</html>
