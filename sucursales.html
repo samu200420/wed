@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sucursales - Color y papel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .sucursales-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 30px 40px;
+    }
+
+    .sucursal-card {
+      background-color: #3A3132;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .sucursal-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .sucursal-card img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .sucursal-nombre {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .sucursal-info {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-contenedor">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <nav class="nav-horizontal">
+      <ul>
+        <li><a href="login.html">LOGIN</a></li>
+       <li><a href="index.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="equipo.html">EQUIPO</a></li>
+        <li><a href="clientes.html">CLIENTES</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="promociones.html">PROMOCIONES</a></li>
+        <li><a href="sucursales.html">SUCURSALES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titulo">NUESTRAS SUCURSALES EN ECUADOR</h2>
+
+    <div class="sucursales-grid">
+      <div class="sucursal-card">
+        <img src="imagenes/sucursales/quito.jpg" alt="Sucursal Quito">
+        <div class="sucursal-nombre">Sucursal Quito</div>
+        <div class="sucursal-info">
+          Av. Amazonas N32-123 y Eloy Alfaro, Quito<br>
+          Tel: (02) 256-7890
+        </div>
+      </div>
+
+      <div class="sucursal-card">
+        <img src="imagenes/sucursales/guayaquil.jpg" alt="Sucursal Guayaquil">
+        <div class="sucursal-nombre">Sucursal Guayaquil</div>
+        <div class="sucursal-info">
+          Av. 9 de Octubre 456 y García Moreno, Guayaquil<br>
+          Tel: (04) 372-4456
+        </div>
+      </div>
+
+      <div class="sucursal-card">
+        <img src="imagenes/sucursales/cuenca.jpg" alt="Sucursal Cuenca">
+        <div class="sucursal-nombre">Sucursal Cuenca</div>
+        <div class="sucursal-info">
+          Calle Larga 7-20 y Hermano Miguel, Cuenca<br>
+          Tel: (07) 282-9988
+        </div>
+      </div>
+
+      <div class="sucursal-card">
+        <img src="imagenes/sucursales/ambato.jpg" alt="Sucursal Ambato">
+        <div class="sucursal-nombre">Sucursal Ambato</div>
+        <div class="sucursal-info">
+          Av. Cevallos y Montalvo, Ambato<br>
+          Tel: (03) 284-6612
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    Color y papel © 2025
+  </footer>
+
+</body>
+</html>

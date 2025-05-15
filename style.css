@@ -1,0 +1,160 @@
+/* Estilos de nuestro equipo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #EBF2F2;
+}
+
+/* Contenedor para centrar el logo */
+.logo-contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+/* Logo cuadrado, más grande y proporcional */
+.logo {
+  width: 150px;
+  height: auto;
+  border: 2px solid #386DBD;
+  object-fit: contain;
+}
+
+.nav-horizontal ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  background-color: #0F4571;
+}
+
+.nav-horizontal li {
+  margin: 0 10px;
+}
+
+.nav-horizontal a {
+  display: inline-block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.nav-horizontal a:hover {
+  background-color: #009DDD;
+}
+
+.titulo {
+  text-align: center;
+  color: #3A3132;
+  font-size: 28px;
+  margin: 30px 0 20px;
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 30px 40px;
+}
+
+.card {
+  background-color: #386DBD;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  border: 3px solid #05D3F8;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.nota {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3A3132;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titulo {
+  animation: slideIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.promociones {
+  padding: 2rem;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.promo-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.promo {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.promo img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.promo:hover {
+  transform: scale(1.05);
+}
